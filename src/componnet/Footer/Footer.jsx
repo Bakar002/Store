@@ -34,11 +34,11 @@ const Footer = () => {
           </div>
           
           {/* Copyright */}
-          <div className="flex-shrink-0 ml-3 text-lg text-black">
+          {/* <div className="flex-shrink-0 ml-3 text-lg text-black">
             <a href="/" className="hover:text-yellow-500">
-              © All rights reserved by My Store
+
             </a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
