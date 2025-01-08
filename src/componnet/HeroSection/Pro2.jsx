@@ -28,7 +28,7 @@ const ProCard = () => {
   });
 
   return (
-    <div className="w-screen p-8 sm:p-16 dark:bg-gray-900 -mt-20">
+    <div className="w-screen p-8 sm:p-16 dark:bg-gray-900 ">
       <div className="flex justify-between items-center mb-8">
         <div className="text-lg text-center leading-tight font-medium dark:text-gray-100">
           <h1 className="text-4xl font-semibold tracking-wide sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl">
