@@ -33,7 +33,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3000); // Change slide every 5 seconds
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
@@ -47,30 +47,30 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full   flex flex-col justify-center items-center m-2">
+    <div className="w-full flex flex-col justify-center items-center">
       {/* Image Container */}
-      <div className="flex justify-center items-center w-full h-3/4 md:h-3/5 overflow-hidden">
+      <div className="flex justify-center items-center w-full h-64 md:h-3/5 lg:h-3/4 overflow-hidden">
         <img
           src={slides[currentSlide].image}
           alt={`Slide ${currentSlide + 1}`}
-          className="object-cover w-full h-full opacity-80 border rounded-3xl"
+          className="object-cover w-full h-full opacity-80 border"
         />
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-between items-center w-full px-4 md:px-8 mt-4">
-        <button
+      <div className="flex justify-between items-center w-full px-4 md:px-8 mt-4 relative">
+        {/* <button
           onClick={prevSlide}
-          className="text-white text-xl sm:text-4xl relative -top-32 sm:-top-64 bg-gray-400 bg-opacity-50 p-2 sm:p-5 rounded-full"
+          className="text-white text-2xl sm:text-4xl absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-400 bg-opacity-50 p-2 sm:p-5 rounded-full"
         >
           &#10094;
         </button>
         <button
           onClick={nextSlide}
-          className="text-white text-xl sm:text-4xl relative -top-32 sm:-top-64 bg-gray-400 bg-opacity-50 p-2 sm:p-5 rounded-full"
+          className="text-white text-2xl sm:text-4xl absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-400 bg-opacity-50 p-2 sm:p-5 rounded-full"
         >
           &#10095;
-        </button>
+        </button> */}
       </div>
     </div>
   );
