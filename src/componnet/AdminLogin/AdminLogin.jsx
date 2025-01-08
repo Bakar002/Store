@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const AdminLogin = () => {
   return (
-    <div className="flex pt-6 pb-4 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500">
+    <div className="flex pt-16 bg-purple-400 h-screen">
       <div className="container px-4 mx-auto">
         <div className="max-w-3xl mx-auto overflow-hidden bg-white rounded-lg shadow-2xl">
-          <div className="py-6 text-center text-white bg-gradient-to-r from-purple-600 to-blue-500">
+          <div className="py-6 text-center text-white bg-gradient-to-r from-purple-600 to-purple-500">
             <h1 className="text-3xl font-bold">Welcome Admin</h1>
             <p className="mt-2">Join our amazing community</p>
           </div>

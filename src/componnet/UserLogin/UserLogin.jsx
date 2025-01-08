@@ -14,10 +14,10 @@ const UserLogin = () => {
   };
 
   return (
-    <div className="flex items-center justify-center pt-8 pb-8 bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
+    <div className="flex items-center justify-center pt-8 pb-8 bg-purple-400">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto overflow-hidden bg-white rounded-lg shadow-2xl">
-          <div className="py-6 text-center text-white bg-gradient-to-r from-blue-500 to-purple-600">
+          <div className="py-6 text-center text-white bg-gradient-to-r from-purple-500 to-purple-600">
             <h1 className="text-3xl font-bold">Welcome User</h1>
             <p className="mt-2">Join our amazing community</p>
           </div>
